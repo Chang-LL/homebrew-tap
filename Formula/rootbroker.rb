@@ -1,19 +1,19 @@
 class Rootbroker < Formula
   desc "Human-approved root command broker for local AI agents"
   homepage "https://github.com/Chang-LL/rootbroker"
-  version "0.1.0-alpha.1"
+  version "0.1.0-alpha.2"
   license "MIT"
 
   depends_on :linux
 
   on_intel do
-    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.1/rootbroker_v0.1.0-alpha.1_linux_amd64.tar.gz"
-    sha256 "302138aa0cd846f97782a4f747d904f1bdc742ce7d5a1a9898ca97a6d0f727a7"
+    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.2/rootbroker_v0.1.0-alpha.2_linux_amd64.tar.gz"
+    sha256 "048bf51185d64ee9a91888c82023fb55700cf7d2a68e9381ecff8aa6248a71c4"
   end
 
   on_arm do
-    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.1/rootbroker_v0.1.0-alpha.1_linux_arm64.tar.gz"
-    sha256 "307de40016846b8328d5285fb0b58e9958458a53f99705fde31adb022d865a99"
+    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.2/rootbroker_v0.1.0-alpha.2_linux_arm64.tar.gz"
+    sha256 "b5e8e657adef5e6c722b402f5663fbf42145db26faa2fc24225f47f4f04e9408"
   end
 
   def install
@@ -29,6 +29,11 @@ class Rootbroker < Formula
       exec "#{libexec}/install.sh" --rootbroker-bin "#{libexec}/rootbroker" "$@"
     SH
     (bin/"rootbroker-setup").chmod 0755
+    (bin/"rootbroker-migrate-private-prealpha").write <<~SH
+      #!/bin/sh
+      exec "#{libexec}/migrate-private-prealpha.sh" "$@"
+    SH
+    (bin/"rootbroker-migrate-private-prealpha").chmod 0755
   end
 
   def caveats
