@@ -16,7 +16,6 @@ jobs:
       - uses: Homebrew/actions/setup-homebrew@8f3d1ec8a696b3b9d9a6c3696b6c73033cab69e4 # main 2026-08-16
       - name: Install and test formula
         run: |
-          brew tap Chang-LL/tap "$GITHUB_WORKSPACE"
           brew install Chang-LL/tap/rootbroker
           rootbroker version
           rootbroker-setup --help
