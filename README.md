@@ -15,3 +15,6 @@ documentation and installed setup assets before running the explicit setup comma
 
 Release archives, checksums, SBOMs, and build provenance are published in the main project's
 [GitHub Releases](https://github.com/Chang-LL/rootbroker/releases).
+
+Security reports should follow the main project's
+[security policy](https://github.com/Chang-LL/rootbroker/security/policy).
