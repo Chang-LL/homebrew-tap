@@ -1,4 +1,4 @@
-class Rootbroker < Formula
+class AgentRootBroker < Formula
   desc "Human-approved sudo/root broker for local AI agents"
   homepage "https://github.com/Chang-LL/agent-root-broker"
   version "0.1.0-alpha.3"
