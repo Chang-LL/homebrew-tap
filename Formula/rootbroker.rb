@@ -1,19 +1,19 @@
 class Rootbroker < Formula
-  desc "Human-approved root command broker for local AI agents"
-  homepage "https://github.com/Chang-LL/rootbroker"
-  version "0.1.0-alpha.2"
+  desc "Human-approved sudo/root broker for local AI agents"
+  homepage "https://github.com/Chang-LL/agent-root-broker"
+  version "0.1.0-alpha.3"
   license "MIT"
 
   depends_on :linux
 
   on_intel do
-    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.2/rootbroker_v0.1.0-alpha.2_linux_amd64.tar.gz"
-    sha256 "048bf51185d64ee9a91888c82023fb55700cf7d2a68e9381ecff8aa6248a71c4"
+    url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.3/rootbroker_v0.1.0-alpha.3_linux_amd64.tar.gz"
+    sha256 "c4c078bf3002a10b239b0a23644be105ac220009ce8766cdd03f34c565ca5edb"
   end
 
   on_arm do
-    url "https://github.com/Chang-LL/rootbroker/releases/download/v0.1.0-alpha.2/rootbroker_v0.1.0-alpha.2_linux_arm64.tar.gz"
-    sha256 "b5e8e657adef5e6c722b402f5663fbf42145db26faa2fc24225f47f4f04e9408"
+    url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.3/rootbroker_v0.1.0-alpha.3_linux_arm64.tar.gz"
+    sha256 "5dfe9005fb76f546aad2dcbeb6830a057b50e68fc38a846515dd0325693614d1"
   end
 
   def install
