@@ -1,18 +1,18 @@
 class AgentRootBroker < Formula
   desc "Human-approved sudo/root broker for local AI agents"
   homepage "https://github.com/Chang-LL/agent-root-broker"
-  version "0.1.0-alpha.7"
+  version "0.1.0-alpha.8"
   license "MIT"
 
   depends_on :linux
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.7/rootbroker_v0.1.0-alpha.7_linux_arm64.tar.gz"
-      sha256 "d25ef20974ccc0cff77636de9a1a1415c86dca6c228d257b2a4d95c5d66e6ccb"
+      url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.8/rootbroker_v0.1.0-alpha.8_linux_arm64.tar.gz"
+      sha256 "92066b7f71aa5c1743c9291128d8478c318056d1527d3bf9c04cfd5f367ac9c5"
     else
-      url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.7/rootbroker_v0.1.0-alpha.7_linux_amd64.tar.gz"
-      sha256 "8598bdce7fb19f2b132be91cf209388ca9a437d64121a25f2d374c2c36b27c46"
+      url "https://github.com/Chang-LL/agent-root-broker/releases/download/v0.1.0-alpha.8/rootbroker_v0.1.0-alpha.8_linux_amd64.tar.gz"
+      sha256 "cb07de74a36561456e32917e4d511a4286decfaac4534843bb04c23ab07ad8c6"
     end
   end
 
